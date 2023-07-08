@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-
-  templateUrl: './app.header.html',
+  selector: 'Header',
+  templateUrl: './header.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class Header {
   title = 'Weather Header';
 }

@@ -1,0 +1,24 @@
+
+
+<div class="pd">
+     
+    <h1>Popular Cities</h1>
+   <div class="d-flex" *ngFor="let x of PopularCities" >   <mat-card class="city-card-color">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title class="title"><b>{{x.city}}</b></mat-card-title>
+            <mat-card-subtitle>{{x.province}}</mat-card-subtitle>
+           
+          </mat-card-title-group>
+        </mat-card-header>
+      </mat-card> </div>
+
+     
+      <img
+      src="https://pbs.twimg.com/media/FOnDTPkXsAE2P14.jpg"
+      alt="Map"
+      width="1125"
+      height="500"
+    />
+      
+  </div>
