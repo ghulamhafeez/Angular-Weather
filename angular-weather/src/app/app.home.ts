@@ -4,7 +4,7 @@ import {MatCardModule} from '@angular/material/card';
 @Component({
   selector: 'home',
   templateUrl: './app.home.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.home.css'],
 
 })
 export class Home {

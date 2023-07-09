@@ -1,0 +1,37 @@
+.city-card-color {
+    background-color :#E07A5F;
+    width: 200px;
+    height: 160px;
+    text-align: center;
+
+ }
+ .b-color {
+    background-color :#E07A5F;
+ }
+
+ .color {
+    color :#E07A5F;
+    }
+    .d-flex {
+       display: flex;
+       direction: row;
+       justify-content: space-between;
+       text-align: center;
+    }
+    
+    .pd {
+       padding-left: 200px;
+    }
+    
+    .title{
+       font-size: 30px;
+       color: #ffffff;
+       padding-left: 26px;
+       padding-bottom: 6px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 100px;
+    }

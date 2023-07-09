@@ -1,30 +1,5 @@
 .app-color {
    background-color :#cdcccc
 }
-.city-card-color {
-   background-color :#E07A5F;
-   width: 200px;
-   height: 200px;
-   text-align: center;
 
-}
-.b-color {
-   background-color :#E07A5F;
-}
-.color {
-color :#E07A5F;
-}
-.d-flex {
-   display: flex;
-   direction: row;
-   justify-content: space-between;
-}
 
-.pd {
-   padding-left: 220px;
-}
-
-.title{
-   font-size: 30px;
-   color: #ffffff;
-}
