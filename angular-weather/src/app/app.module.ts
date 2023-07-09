@@ -6,12 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { Home } from './home';
-import { Header } from './header';
-import {Footer} from "./footer"
+import { Home } from './app.home';
+import { AppHeader } from './app.header';
+import {AppFooter} from "./app.footer"
 @NgModule({
   declarations: [
-    AppComponent , Home ,Header,Footer
+    AppComponent , Home ,AppHeader,AppFooter
   ],
   imports: [
     BrowserModule,

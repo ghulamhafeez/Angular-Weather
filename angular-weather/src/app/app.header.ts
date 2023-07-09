@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'Header',
-  templateUrl: './header.html',
+  templateUrl: './app.header.html',
   styleUrls: ['./app.component.css']
 })
-export class Header {
-  title = 'Weather Header';
+export class AppHeader {
 }
