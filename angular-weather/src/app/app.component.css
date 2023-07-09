@@ -8,15 +8,23 @@
    text-align: center;
 
 }
+.b-color {
+   background-color :#E07A5F;
+}
+.color {
+color :#E07A5F;
+}
 .d-flex {
    display: flex;
-   flex-direction: row;
+   direction: row;
+   justify-content: space-between;
 }
 
 .pd {
-   padding-left: 200px;
+   padding-left: 220px;
 }
 
 .title{
    font-size: 30px;
+   color: #ffffff;
 }
