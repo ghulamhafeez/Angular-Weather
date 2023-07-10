@@ -1,14 +1,13 @@
 <div class="pd">
   <h1 class="color">Popular Cities</h1>
-  <div class="d-flex" *ngFor="let x of PopularCities">
-    <mat-card class="city-card-color">
+  <div class="d-flex">
+    <mat-card  *ngFor="let x of PopularCities" class="city-card-color">
       <mat-card-header>
         <mat-card-title-group>
           <mat-card-title class="title">{{x.city}}</mat-card-title>
-          <mat-card-subtitle><b>{{x.province}}</b></mat-card-subtitle>
+          <mat-card-subtitle class="text"><b>{{x.province}}</b></mat-card-subtitle>
         </mat-card-title-group>
       </mat-card-header>
-      <!-- <a href="https://www.w3schools.com">More Details</a> -->
       <button class="btn" mat-flat-button>more detail</button>
     </mat-card>
   </div>

@@ -7,6 +7,15 @@
 
 
  .input {
-    text-align: center;
-    width: 100px;
+   margin-left: 400px;
+   margin-top: 12px;
+    width: 280px;
+
+ }
+
+ .back{
+   padding-left: 340px;
+   padding-top: 12px;
+   color: white;
+    font-size: 20px;
  }
