@@ -5,13 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
+import {MatTabsModule} from '@angular/material/tabs';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { Home } from './app.home';
 import { AppHeader } from './app.header';
-import {AppFooter} from "./app.footer"
+import {AppFooter} from "./app.footer";
+import { AppDetail } from './app.detail';
+import {AppHealth} from './health.card';
 @NgModule({
   declarations: [
-    AppComponent , Home ,AppHeader,AppFooter
+    AppComponent , Home ,AppHeader,AppFooter ,AppHealth ,AppDetail
   ],
   imports: [
     BrowserModule,
@@ -19,8 +22,8 @@ import {AppFooter} from "./app.footer"
     BrowserAnimationsModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
-    
+    MatInputModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
