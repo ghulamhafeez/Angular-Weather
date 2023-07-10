@@ -1,26 +1,22 @@
-
-
 <div class="pd">
-     
-    <h1 class="color">Popular Cities</h1>
-   <div class="d-flex" *ngFor="let x of PopularCities" >   <mat-card class="city-card-color">
-        <mat-card-header>
-          <mat-card-title-group>
-            <mat-card-title class="title">{{x.city}}</mat-card-title>
-            <mat-card-subtitle><b>{{x.province}}</b></mat-card-subtitle>
-           
-          </mat-card-title-group>
-        </mat-card-header>
-        <!-- <a href="https://www.w3schools.com">More Details</a> -->
-        <button class='btn'  mat-flat-button>more detail</button>
-      </mat-card> </div>
-
-     
-      <img
-      src="https://pbs.twimg.com/media/FOnDTPkXsAE2P14.jpg"
-      alt="Map"
-      width="1200"
-      height="500"
-    />
-      
+  <h1 class="color">Popular Cities</h1>
+  <div class="d-flex" *ngFor="let x of PopularCities">
+    <mat-card class="city-card-color">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title class="title">{{x.city}}</mat-card-title>
+          <mat-card-subtitle><b>{{x.province}}</b></mat-card-subtitle>
+        </mat-card-title-group>
+      </mat-card-header>
+      <!-- <a href="https://www.w3schools.com">More Details</a> -->
+      <button class="btn" mat-flat-button>more detail</button>
+    </mat-card>
   </div>
+
+  <img
+    src="https://pbs.twimg.com/media/FOnDTPkXsAE2P14.jpg"
+    alt="Map"
+    width="1200"
+    height="500"
+  />
+</div>
