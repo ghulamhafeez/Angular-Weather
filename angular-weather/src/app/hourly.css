@@ -1,0 +1,14 @@
+.h-card {
+    background-color :#E07A5F;
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 8px;
+ }
+ .div {
+    display: flex;
+    justify-content: space-between;
+    /* padding-right: 100px; */
+    padding-top: 50px;
+}
