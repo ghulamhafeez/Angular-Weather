@@ -1,25 +1,25 @@
-
-    
-    <div class="b-color">
-      <!-- <mat-form-field class="input" >
+<div class="b-color">
+  <!-- <mat-form-field class="input" >
         <mat-label>Search</mat-label>
         <input matInput placeholder="Search"  >
       </mat-form-field> -->
 
-      <mat-form-field class="input">
-        <!-- <mat-label>Search</mat-label> -->
-        <input type="text"
-               placeholder="Search"
-               aria-label="Search"
-               matInput
-               [(ngModel)]="city"
-               >
-        <!-- <mat-autocomplete #auto="matAutocomplete">
-          <mat-option *ngFor="let option of options" [autocomplete]="option">
-            {{option}}
-          </mat-option>
-        </mat-autocomplete> -->
-      </mat-form-field>
-      
-      <b class="back">Back</b>
-    </div>
+  <mat-form-field class="input">
+    <!-- <mat-label>Search</mat-label> -->
+    <input
+      type="text"
+      placeholder="Search"
+      matInput
+      (input)="onInput($event)"
+      [matAutocomplete]="auto"
+    />
+
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of options" [value]="option.LocalizedName"  (click)="redirectToDetail(option)">
+        {{option?.LocalizedName}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <b class="back">Back</b>
+</div>

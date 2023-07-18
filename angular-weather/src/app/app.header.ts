@@ -1,26 +1,29 @@
 import { Component } from '@angular/core';
 import {WeatherService} from './weather.services'
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'Header',
   templateUrl: './app.header.html',
   styleUrls: ['./app.header.css']
 })
 export class AppHeader {
-  constructor(private service: WeatherService) {}
-  city: string = 'multan'
-  autocomplete: {} = []
+  constructor(private service: WeatherService ,private router: Router) {}
+  city: string = ''
+  options: any = [];
 
+  onInput(e:any){
+    console.log("value" ,e.target.value);       
+    this.city = e.target.value
 
-  ngOnInit() {
-    this.service.getAutoCompleteCity(this.city).subscribe((response) => {
+    this.service.getAutoCompleteCity(e.target.value).subscribe((response) => {
       console.log('users', response);
-      this.autocomplete = response;
+      this.options = response;
     });
 
-    console.log('autocomplete', this.autocomplete);
-      console.log('city', this.city);
-  }
+}
 
-
+redirectToDetail ( option : any){
+  console.log("option" ,option.Key);     
+  this.router.navigate( [`weather-detail/${option.Key}`]);
+}
 }

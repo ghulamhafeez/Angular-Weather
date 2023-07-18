@@ -1,27 +1,29 @@
 import { Component } from '@angular/core';
 import { WeatherService } from './weather.services';
-// import { ActivatedRoute, Route } from '@angular/router'
+import { ActivatedRoute, Route } from '@angular/router'
+import { switchMap } from 'rxjs/operators';
 @Component({
   selector: 'Detail',
   templateUrl: './app.detail.html',
   styleUrls: ['./app.detail.css']
 })
 export class AppDetail {
-  constructor(private service: WeatherService 
+  constructor(private service: WeatherService ,
     // ,private route: Route ,
-    // private ActivatedRoute: Route
+    private route: ActivatedRoute
     ) {}
 
   // locationsForecast: any = this.service.getlocationsForecast();
 
   
-    // ngOnInit() {
+    ngOnInit() {
 
-    // this.route.params.subscribe( params => console.log(params.id));
-  //   this.route.paramMap.switchMap((params: ParamMap) => {
+    this.route.params.subscribe( params => console.log(params, "parm"));
+
+  //   this.route.paramMap.switchMap((params: any) => {
   //     let user_id = params.get('id');
-
-  //     return this.userService.get(user_id);
+  //     console.log(params, "parm")
+  //     // return this.userService.get(user_id);
   // })
-  // }
+  }
 }
